@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatabile" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Login">Login</a></li>
+                <li><a href="#Men">Men</a></li>
+                <li><a href="#Women">Women</a></li>
+                <li><a href="#Kids">Kids</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <br>
+        <hr>
+    </div class="header-text">
+    <h1><pre>                  WALKTECH<pre></h1><br>
+        <h2><pre>                                                                                      Step into the real world of FOOTWEAR</pre></h2>
+        <img src="shoes/background shoe.png" class="logo">
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="about-col-2">
+            <h1 class="sub-title">About</h1>
+            <p><i><b>Welcome to our footwear landing page, where style meets comfort and quality. Step into a world of footwear excellence as we present you with a carefully curated collection of shoes that will elevate your fashion game and provide the utmost comfort for your feet.Discover a wide range of footwear options that cater to every occasion and style preference. From elegant and sophisticated dress shoes to trendy and casual sneakers, we have something for everyone. Our collection showcases the latest fashion trends while prioritizing comfort and durability, ensuring that you never have to compromise on style or functionality.Each pair of shoes is crafted with meticulous attention to detail, using premium materials that guarantee both style and longevity. Whether you're looking for a pair of heels that will make a statement, comfortable everyday shoes for long walks, or sturdy boots for outdoor adventures, our selection has you covered.We understand the importance of finding the perfect fit, which is why we offer a variety of sizes and widths to accommodate different foot shapes and ensure optimal comfort. Our footwear is designed to provide excellent support, cushioning, and flexibility, allowing you to stay on your feet all day without any discomfort.Explore our landing page and let our stunning footwear imagery inspire you. Each image captures the essence of our collection, showcasing the impeccable craftsmanship and unique design elements that set our shoes apart. Whether you're a trendsetter, a fitness enthusiast, a professional, or simply someone who values both style and comfort, we have the perfect pair of shoes waiting for you.Join us on this stylish journey and experience the perfect balance of fashion and functionality. Discover footwear that not only complements your wardrobe but also enhances your lifestyle. Step confidently, step comfortably, and step into a world of footwear excellence.</i></p>
+            <div id="courses">
+                <div class="container" >
+                    <hl class="sub-title">OUR COLLECTION</hl>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="shoes/dress shoes.png">
+                            <div class="layer">
+                                <h3>Dress Shoes</h3>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="shoes/athletic shoes.png">
+                            <div class="layer">
+                                <h3>Athletic Shoes</h3>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="shoes/casual shoes.png">
+                            <div class="layer">
+                                <h3>Casual Shoes</h3>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="shoes/boots.png">
+                            <div class="layer">
+                                <h3>Boots</h3>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="shoes/sandals.png">
+                            <div class="layer">
+                                <h3>Sandals</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+        </div>   
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact me</h1>
+                <p><i class="fas fa-paper-plane"></i>FootwearWorld@email.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 0987654321</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet"
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required> 
+                    <textarea type="message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ Footweatworld. made with <i class="fas fa-heart"></i>  new world</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab"); 
+    }
+</script>
+
+</body>
+</html>
